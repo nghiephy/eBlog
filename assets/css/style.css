@@ -1,4 +1,4 @@
-
+/* Header section css */
 .header {
     height: var(--header-height);
     border-bottom: 1px solid var(--boder-color);
@@ -57,11 +57,11 @@
 }
 
 .nav-item {
-   
     height: var(--header-height);
 }
 
 .nav-item a {
+    transition: all .2s linear;
     position: relative;
     display: inline-block;
     padding: 0 20px;
@@ -136,6 +136,7 @@
     justify-content: flex-end;
     align-items: center;
     border: 1px solid var(--boder-color);
+    border-radius: 2px;
 }
 
 .search__input {
@@ -160,8 +161,84 @@
     line-height: 42px;
     padding: 0 10px;
     display: none;
+    animation: headerNotifyGrowth ease-out 0.2s;
 }
 
 .search__input:focus + .search__icon {
     display: block;
+}
+
+/* Propose section css begin */
+.propose {
+    padding-top: 40px;
+}
+
+.propose-item-link {
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    height: 334px;
+    display: block;
+    transition: all .2s linear;
+}
+
+.propose-item-link:hover {
+    opacity: 0.9;
+}
+
+.propose-item {
+    padding: 20px 15px;
+    height: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.propose-item__info {
+    margin-bottom: 20px;
+}
+
+.propose-info__label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--item2-color);
+    padding: 3px 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin-right: 20px;
+    transition: all .2s linear;
+}
+
+.propose-info__label:hover {
+    opacity: 0.9;
+}
+
+.propose-info__label[data-type="javascript"] {
+    background-color: var(--item2-color);
+}
+
+.propose-info__label[data-type="jquery"] {
+    background-color: var(--item4-color);
+}
+
+.propose-info__date {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 0 1px black;
+    cursor: text;
+}
+
+.propose-item__title {
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 0 1px #333;
+}
+
+.propose-item__title:hover {
+    text-decoration: underline;
 }

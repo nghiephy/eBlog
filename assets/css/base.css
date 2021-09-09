@@ -34,3 +34,13 @@ img {
 a {
     text-decoration: none;
 }
+
+
+@keyframes headerNotifyGrowth {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.4;
+    }
+}
