@@ -22,6 +22,20 @@
         display: none;
     }
 
+    /* Recent section css reponsive */
+    .app {
+        overflow-x: hidden;
+        padding: 10px;
+    }
+
+    .recent-item {
+        height: 400px;
+    }
+
+    .recent-item__img {
+        height: 80%;
+    }
+
    
 }
 

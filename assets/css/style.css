@@ -212,6 +212,7 @@
     transition: all .2s linear;
 }
 
+.recent-item__img:hover,
 .propose-info__label:hover {
     opacity: 0.9;
 }
@@ -222,6 +223,14 @@
 
 .propose-info__label[data-type="jquery"] {
     background-color: var(--item4-color);
+}
+
+.propose-info__label[data-type="web-design"] {
+    background-color: var(--item1-color);
+}
+
+.propose-info__label[data-type="css"] {
+    background-color: var(--item3-color);
 }
 
 .propose-info__date {
@@ -239,6 +248,44 @@
     text-shadow: 0 0 1px #333;
 }
 
+.recent-item__title:hover,
 .propose-item__title:hover {
     text-decoration: underline;
+}
+
+/* Recent section css */
+.recent-title {
+    font-size: 2.8rem;
+    opacity: 0.9;
+    margin: 30px 0;
+}
+
+.recent-item {
+    display: block;
+    height: 310px;
+    padding: 4px;
+    margin-bottom: 50px;
+}
+
+.recent-item__img {
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    border-radius: 2px;
+}
+
+.recent-item__body {
+    margin-top: 20px;
+}
+
+.item-body__info__date {
+    color: var(--text-color);
+    text-shadow: none;
+}
+
+.recent-item__title {
+    margin-top: 20px;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 700;
 }
